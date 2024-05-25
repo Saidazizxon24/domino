@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    lg: { max: "1024px" },
+                    md: { max: "768px" },
+                    sm: { max: "620px" },
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- style="font-family: Montserrat sans-serif;" -->
+
+<body>
+    <nav>
+        <div class=" flex bg-neutral-700 text-white content-center h-11 px-10 justify-evenly">
+            <div class="px-3 mt-3">
+                <ul class="flex list-none">
+                    <li class="ml-5"><a class="text-xs uppercase " href="#">My Account</a></li>
+                    <li class="ml-5"><a class="text-xs uppercase" href="#">My Wishlist</a></li>
+                    <li class="ml-5"><a class="text-xs uppercase" href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="w-[480px] px-3 mt-3">
+                <ul class="flex justify-end list-none ">
+                    <li><span class="text-xs uppercase mr-1">Currency: USD</span> <i class="fa-solid fa-angle-down"></i>
+                    </li>
+                    <li class="ml-4"><span class="text-xs uppercase mr-1">English</span> <i
+                            class="fa-solid fa-angle-down"></i></li>
+                </ul>
+            </div>
+            <div class="px-3 mt-3 w-40 h-8">
+                <ul class="flex list-none justify-end">
+                    <li>
+                        <a class="w-7 h-7 py-1 px-2 bg-neutral-600 text-white" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="w-7 h-7 py-1 px-1 ml-1 bg-neutral-600 text-white" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="w-7 h-7 py-1 px-1 ml-1 bg-neutral-600 text-white" href="#">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Header -->
+        <div class=" flex py-5 mx-16 justify-evenly">
+            <div class="w-[216px] h-[82px] py-4">
+                <a href="index.html">
+                    <img class="w-[156px] h-[52px]" src="https://htmldemo.net/domino/domino/images/logo_1.png" alt="">
+                </a>
+            </div>
+            <div class="w-[720px] h-[82px] px-3 py-4 flex justify-end">
+                <div class="mr-5">
+                    <div class="pb-[7px]">
+                        <i class="fa-regular fa-heart"></i>
+                        <a class="uppercase text-sm ml-1 font-semibold" href="#">My wishlist</a>
+                    </div>
+                    <hr class="w-12 font-bold">
+                    <div>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <a class="uppercase text-sm ml-1 font-semibold" href="#">Compare</a>
+                    </div>
+                </div>
+                <div class="w-[232px] h-[63px] p-[18px] bg-neutral-200">
+                    <span class="text-xl font-semibold">
+                        <i style="margin-right: 5px;" class="fa-solid fa-phone"></i>
+                        1-888-123-456-89
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Main menu -->
+        <div class="flex mx-40 h-[73px] p-5 justify-evenly">
+            <div>
+                <ul class="text-base items-center font-semibold uppercase flex">
+                    <li class="mr-4">Home <i class="fa-solid fa-angle-down"></i></li>
+                    <li class="mr-4">Shop <i class="fa-solid fa-angle-down"></i></li>
+                    <li class="mr-4">About us</li>
+                    <li class="mr-4">Portfolio</li>
+                    <li class="mr-4">Blog <i class="fa-solid fa-angle-down"></i></li>
+                    <li class="mr-4">Pages <i class="fa-solid fa-angle-down"></i></li>
+                    <li class="mr-4">Contact us</li>
+                </ul>
+            </div>
+            <div class="flex">
+                <div class="mr-5"><i class="fa-solid fa-magnifying-glass text-xl"></i></div>
+                <div class="flex">
+                    <div class="mr-4 h-11 pr-3 border-r-2 border-solid border-[#bdbdbd]"><i
+                            class="fa-solid fa-bag-shopping text-2xl"></i></div>
+                    <div>
+                        <h3 class="uppercase font-semibold">Shopping Cart</h3>
+                        <span>0 item(s) - $0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="w-full text-center relative">
+            <img class="w-[100%] " src="https://htmldemo.net/domino/domino/images/slider/slide2.jpg" alt="">
+            <div class="absolute top-1/2 right-[150px] translate-y-[-50%]">
+                <h4 class="uppercase text-3xl mb-10 text-orange-200">Men's Accessories</h4>
+                <h1 class="uppercase text-8xl mb-9 text-white">Only $89.00</h1>
+                <a class="uppercase bg-neutral-600 text-white w-40 h-10 py-[11px] px-[25px] mb-[10px]" href="#">Shop
+                    now</a>
+            </div>
+        </div>
+        <div
+            class="my-20 p-4  flex justify-center text-center mx-60 border-t-2 border-b-2 border-solid border-[#bdbdbd]">
+            <div class="mt-4 px-3 w-[320px] h-[81px]">
+                <h4 class="mb-3 font-bold text-xl">FREE UK DELIVERY</h4>
+                <p class="mb-4 text-lg text-gray-600">International Delivery Available</p>
+            </div>
+            <div class="mt-4 px-3 w-[320px] h-[81px] border-l-2 border-r-2 border-solid border-[#bdbdbd]">
+                <h4 class="mb-3 font-bold text-xl">FREE PRESCRIPTION LENSES</h4>
+                <p class="mb-4 text-lg text-gray-600">*Save Up To £106 On Your Lenses</p>
+            </div>
+            <div class="mt-4 px-3 w-[320px] h-[81px]">
+                <h4 class="mb-3 font-bold text-xl">QUALIFIED OPTICIANS</h4>
+                <p class="mb-4 text-lg text-gray-600">Prescription Experts</p>
+            </div>
+        </div>
+        <!-- grid cards -->
+        <div>
+            <div class="flex justify-center">
+                <div class="max-w-[480px] h-[489px] px-3">
+                    <img class="w-[456px] h-[456px]" src="https://htmldemo.net/domino/domino/images/discount/cms1.jpg"
+                        alt="">
+                </div>
+                <div class="max-w-[240px] h-[489px] px-3">
+                    <img class="w-[216px] h-[456px]" src="https://htmldemo.net/domino/domino/images/discount/cms2.jpg"
+                        alt="">
+                </div>
+                <div class="max-w-[240px] h-[489px] px-3">
+                    <img class="w-[216px] h-[216.8px] mb-[22.5px]"
+                        src="https://htmldemo.net/domino/domino/images/discount/cms3.jpg" alt="">
+                    <img class="w-[216px] h-[216.8px]" src="https://htmldemo.net/domino/domino/images/discount/cms4.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Our Products -->
+        <div class="mt-[60px]">
+            <div class="text-center">
+                <div class="mb-10">
+                    <h3 class="text-2xl font-bold mb-[7px] text-[#333]">OUR PRODUCTS</h3>
+                    <img class="max-w-[100%] h-auto"
+                        src="https://htmldemo.net/domino/domino/images/icons/icon-title.png" alt="">
+                </div>
+                <div class="inline-block mb-[49px]">
+                    <ul role="tablist" class="list-disc flex">
+                        <li><a class="uppercase mr-7 list-none text-base font-bold text-[#999] mb-[10px]" href="#">New
+                                Arrival</a></li>
+                        <li><a class="uppercase mr-7 text-base font-bold text-[#999] mb-[10px]" href="#">Onsale</a></li>
+                        <li><a class="uppercase mr-7 text-base font-bold text-[#999] mb-[10px]" href="#">Featured
+                                Products</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex mx-52">
+            <div class="mx-3 relative">
+                <div class="relative">
+                    <div
+                        class="text-sm font-semibold leading-[65px] w-[65px] h-[65px] block text-center uppercase text-white bg-[#333] rounded-[50%] absolute left-[300px] top-[-10px] ">
+                        New</div>
+                    <div class="hover:shadow-gray-600 hover:shadow-lg">
+                        <img class="w-[342px] h-[475px]" src="https://htmldemo.net/domino/domino/images/product/p1.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="hover:block text-center absolute top-[180px] left-[110px]">
+                    <div class="flex justify-center">
+                        <div
+                            class="hover:bg-[#A18E7D] w-8 h-8 text-center mr-2 bg-white border-2 border-solid border-[#A18E7D]">
+                            <i class="fa-solid fa-cart-shopping text-lg text-[#A18E7D] hover:text-white"></i>
+                        </div>
+                        <div
+                            class="hover:bg-[#A18E7D] w-8 h-8 text-center mr-2 bg-white border-2 border-solid border-[#A18E7D]">
+                            <i class="fa-regular fa-heart text-lg text-[#A18E7D] hover:text-white"></i>
+                        </div>
+                        <div
+                            class="hover:bg-[#A18E7D] w-8 h-8 text-center  bg-white border-2 border-solid border-[#A18E7D]">
+                            <i class="fa-solid fa-arrows-rotate text-lg text-[#A18E7D] hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div><button
+                            class="hover:bg-[#A18E7D] hover:text-white uppercase border-2 mt-5 border-solid bg-white border-[#A18E7D] text-[#A18E7D] p-2"><i
+                                class="fa-solid fa-magnifying-glass mr-1 text-[#A18E7D] hover:text-white"></i>Quick
+                            View</button></div>
+                </div>
+
+                <div class="max-w-[342px] h-auto mt-5 text-center relative">
+                    <div>
+                        <a href="#">
+                            <h4 class="uppercase mb-[10px]">Soluta Dress</h4>
+                        </a>
+                    </div>
+                    <div class="w-10 h-px absolute left-1/2 translate-x-[-50%] bg-[#333] "></div>
+                    <div class="mt-[29px]">
+                        <span class="text-sm">$120.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-3">
+                <div class="relative">
+                    <div
+                        class="text-sm font-semibold leading-[65px] w-[65px] h-[65px] block text-center uppercase text-white bg-[#333] rounded-[50%] absolute left-[300px] top-[-10px] ">
+                        New</div>
+                    <div class="hover:shadow-gray-600 hover:shadow-lg">
+                        <img class="w-[342px] h-[475px]" src="https://htmldemo.net/domino/domino/images/product/p2.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="max-w-[342px] h-auto mt-5 text-center relative">
+                    <div>
+                        <a href="#">
+                            <h4 class="uppercase mb-[10px]">Mirium Est Notare</h4>
+                        </a>
+                    </div>
+                    <div class="w-10 h-px absolute left-1/2 translate-x-[-50%] bg-[#333] "></div>
+                    <div class="mt-[29px]">
+                        <span class="text-sm">$342.00</span>
+                        <del class="text-[#959595] text-sm">$360.00</del>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-3 ">
+                <div class="relative">
+                    <div
+                        class="text-sm font-semibold leading-[65px] w-[65px] h-[65px] block text-center uppercase text-white bg-[#333] rounded-[50%] absolute left-[300px] top-[-10px] ">
+                        New</div>
+                    <div class="hover:shadow-gray-600 hover:shadow-lg">
+                        <img class="w-[342px] h-[475px]" src="https://htmldemo.net/domino/domino/images/product/p3.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="max-w-[342px] h-auto mt-5 text-center relative">
+                    <div>
+                        <a href="#">
+                            <h4 class="uppercase mb-[10px]">Soluta Dress</h4>
+                        </a>
+                    </div>
+                    <div class="w-10 h-px absolute left-1/2 translate-x-[-50%] bg-[#333] "></div>
+                    <div class="mt-[29px]">
+                        <span class="text-sm">$332.00</span>
+                        <del class="text-[#959595] text-sm">$350.00</del>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="flex">
+            <div>
+                <div class="w-[536px] h-[298px] py-11">
+                    <div class="w-[80%] text-center m-auto">
+                        <div>
+                            <h3 class="font-bold mb-[7px] uppercase text-[#333] text-[28px]">LIBER TEMPOR CUM SOLUTA
+                            </h3>
+                        </div>
+                        <div class="mt-10">
+                            <p class="mb-15px text-[15px] text-[#212529] ">Aenean commodo ligula eget dolor Aenean
+                                massa.
+                                Portals seize data-driven, tag expedite.</p>
+                        </div>
+                        <div class="mt-[40px]">
+                            <a class="py-[11px] px-[25px] mb-[10px] bg-[#333] text-white uppercase font-light" href="#">See
+                                Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[536px] h-[316px]">
+                    <a href="#"><img class="max-w-[100%] h-auto"
+                            src="https://htmldemo.net/domino/domino/images/middle/m2.jpg" alt=""></a>
+                </div>
+            </div>
+            <div>
+                <div class="w-[536px] h-[316px]">
+                    <a href="#"><img class="max-w-[100%] h-auto"
+                            src="https://htmldemo.net/domino/domino/images/middle/m1.jpg" alt=""></a>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
